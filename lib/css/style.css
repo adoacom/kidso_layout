@@ -1,0 +1,240 @@
+/* Avenir */
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenirnext-ultralight.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenirnext-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenirnext-demibold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+body {
+	font-family:Avenir;
+}
+.lineK{
+    width:100%
+}
+.lineHH{
+    background-color: yellow;
+    height:20px;
+}
+.lineHF{
+    background-color:red; 
+    height:5px;
+}
+.featureBar-kidso{
+	margin-bottom:0;
+    height: 68px;
+    background-color:transparent;
+    border-color: transparent;
+	line-height:57px;
+}
+.featureBar-kidso .navbar-nav a {
+	display:inline-block;
+	text-align:center;
+	border-left:solid 1px #FFC842;
+	padding: 10px 15px;
+}
+.featureBar-kidso .navbar-nav a p{
+	margin-bottom:0;
+}
+.featureBar-kidso .search-input {
+	display:inline-block;
+	border: none;
+
+}
+.featureBar-kidso .search-input input {
+	border: none;
+	background-color:#DDDDDD;
+	height:67px;
+	padding-left:15px;
+}
+.featureBar-kidso .search-kidso .button-search {
+	display:inline-block;
+	height:67px;
+	width: 67px;
+	border:none;
+	background-color:#FFC842;
+	padding: 5px;
+	line-height:57px;
+	vertical-align:middle;
+}
+.search-kidso{
+	height:68px;
+}
+.search-kidso li a{
+	display:inline-block;
+}
+.lang-action a{
+	font-weight:bold;
+}
+.nav-kidso {
+	background-color:#FFC842;
+	color:white;
+	margin-bottom: 20px;
+}
+.nav-kidso  a{
+	color:white;
+}
+.nav-kidso  li.active{
+	background-color:white;
+}
+.nav-kidso  li.active a{
+	color:black;
+}
+.slide-image-kidso{
+	min-height:315px;
+	margin-bottom:20px;
+}
+.title-infomation-partner{
+	padding: 0;
+	font-family:Avenir;
+	font-weight:bold;
+}
+.time-infomation-partner{
+	padding: 0;
+	font-family:Avenir;
+	font-weight:bold;
+}
+.share-network{
+	padding: 10px;
+	
+}
+.content-infomation-partner{
+	font-family:Avenir;
+}
+.ads-editor-page{
+	min-height:170px;
+}
+.ads-editor-page img{
+	width:100%;
+}
+.comment-lasted{
+	margin-top:20px;
+}
+.title-lasted-comment{
+	margin-bottom:7px;
+	color:#FFC842;
+	border-bottom:solid 1px #FFC842;
+	padding
+}
+.title-partner{
+	font-weight:bold;
+}
+.comments-div{
+	margin:15px 0;
+	padding:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.comments-div-1{
+	background-color:transparent;
+}
+.comments-div-2{
+	background-color:#F0F0F0;
+}
+.comments-div-3{
+	background-color:#DDDCDB;
+}
+.image-screenshoot img{
+	height:100px;
+	width: 100%;
+}
+.comment-element{
+	padding-top:10px;
+}
+.quotes-content{
+	position: relative;
+	text-align: left;
+	background-color: #fff;
+	border: 1px dashed #FFC842;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.quotes-content:before{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	bottom: -18px;
+	border: 10px dashed #FFC842;
+	border-color: #FFC842 transparent transparent #FFC842;
+}
+.quotes-content:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 1px;
+	bottom: -15px;
+	border: 9px solid;
+	border-color: #fff transparent transparent #fff;
+}
+.content-comment div {
+	padding-left: 10px;
+	font-size:12px;
+	
+}
+.user-comment{
+	margin-top:10px;
+	color:#3CBEB4;
+	font-weight:bold;
+}
+.time-comment{
+	color:#3CBEB4;
+	font-weight:bold;
+	font-size:12px;
+}
+.logo-kido {
+    padding:5px;
+}
+.logo-kido img {
+    height: 100%
+}
+#mainBG{
+    height:500px;
+    background-color: red;
+}
+.searchTools{
+    padding-top: 300px;
+    text-align: center;
+}
+.titleSearch{
+    font-size: 16px;
+    font-weight:bold;
+    padding:15px;
+}
+#mainHP{
+    margin-top:30px;
+}
+.education-tool{
+    border: solid 1px blue;
+}
+.outdoor-tool{
+    border: solid 1px greenyellow;
+
+   
+}
+.medical-tool{
+    border: solid 1px pink;
+
+}
+.party-tool{
+    border: solid 1px purple;
+
+}
