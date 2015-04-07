@@ -352,3 +352,11 @@ body {
 	height: 50px;
 	overflow:hidden;
 }
+/* my page */
+#banner_mypage img {
+	display:inline-block;
+	width:100%
+}
+#banner_mypage{
+	margin-bottom:20px;
+}
