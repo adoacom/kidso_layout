@@ -550,4 +550,36 @@ body {
 	padding: 15px 0;
 	color:white;
 }
+/*About-US page*/
+.direction-about-us{
+}
+.direction-about-us .about-us-element{
+	background-color:#FFC842;
+	border-radius:5px;
+	moz-border-radius:5px;
+	webkit-border-radius:5px;
+	margin-bottom: 15px;
+}	
+.about-us-element .left-side-aus-ele{
+	display:inline-block;
+	width: 30px;
 	
+}
+.about-us-element .right-side-aus-ele{
+	border-left:1px dashed white;
+	display:inline-block;
+	padding:10px 0;
+	padding-left:20px;
+	
+	
+}
+.about-us-element .right-side-aus-ele p {
+	margin:0;
+}
+.direction-img img {
+	display:inline-block;
+	width:100%;
+}
+.submit-contact-aus a{
+	color:white;
+}
