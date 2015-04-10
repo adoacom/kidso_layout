@@ -13,6 +13,7 @@ and open the template in the editor.
     <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./lib/css/social-sharing-buttons.css" rel="stylesheet">
 	<link href="./lib/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./lib/css/als.css" rel="stylesheet">
 	<link href="./lib/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -74,13 +75,13 @@ and open the template in the editor.
 	</div>
 	<div class="container">
 		<div class="col-xs-8 ">
-			<div id="banner_mypage" class='row div_mypage'>
+			<div id="banner_mypage" class='div_mypage'>
 				<img src="./lib/img/alila/01.jpg">
 				<a href='#' class='choosePhotoBanner'>
 					<img src='./lib/images/camera.png'>
 				</a>
 			</div>
-			<div id="profile_mypage" class='row div_mypage'>
+			<div id="profile_mypage" class=' div_mypage'>
 				<div class='avatar_mypage'>
 					<section>
 						<div class='pic_mypage'>
@@ -134,31 +135,40 @@ and open the template in the editor.
 				<div class='title-div-mypage'>
 					MY FRIENDS
 				</div>
-				<div class='list-friend-mypage'>
-					<div class='list-fr-btn-left'>
-					</div>
-					<div class='list-fr-images'>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
-						</div>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
-						</div>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
-						</div>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
-						</div>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
-						</div>
-						<div class='image-element'>
-							<img src="./lib/img/alila/01.jpg">
+				<div id="lista1" class="als-container list-fr-images">
+					<div class="als-prev als-btn">
+						<div class='middle-div middle-my-fr'>
+							<section>
+								<img src="./lib/images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
+							</section>
 						</div>
 					</div>
-					<div class='list-fr-btn-right'>
+					<div class="als-viewport">
+						<div class="middle-div middle-my-fr">
+							<section>
+								<ul class="als-wrapper">
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									<li class="als-item"><div class ='image-element'><img src="./lib/img/alila/01.jpg" /></div></li>
+									
+								</ul>
+							</section>
+						</div>
 					</div>
+					<div class="als-next als-btn">
+						<div class='middle-div middle-my-fr'>
+							<section>	
+								<img src="./lib/images/thin_right_arrow_333.png" alt="next" title="next" /></span>
+							</section>
+						</div>	
+					</div>	
 				</div>
 			</div>
 			<div id='review_mypage'>
@@ -192,6 +202,9 @@ and open the template in the editor.
 					11/10/2014 SAT 20:43
 					</div>
 				</div>
+				<div id='review-read-more'>
+						READ MORE
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -199,10 +212,10 @@ and open the template in the editor.
 				<img src="lib/images/png-ex.png">
 			</div>
 			<div class="comment-lasted">
-				<div class="title-lasted-comment row">
+				<div class="title-lasted-comment">
 				LASTED COMMENTS
 				</div>
-				<div class ="row comment-lasted-details"> 
+				<div class ="comment-lasted-details"> 
 					<div class="comments-div-3 comments-div row">
 						<div class="title-partner">
 						Autism Partnership School
@@ -266,10 +279,10 @@ and open the template in the editor.
 							</div>
 						</div>
 					</div>
-					<div class="contact-link row">
+					<div class="contact-link ">
 						<a href="">Contact Us / Privacy Policy</a>
 					</div>
-					<div class="contact-link row">
+					<div class="contact-link ">
 						<a href="">Restaurant information</a>
 					</div>
 				</div>
@@ -277,10 +290,29 @@ and open the template in the editor.
 		</div>
 		
 	</div>
-	<script src="./lib/js/jquery.js"></script>
-    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./lib/js/jquery.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./lib/js/jquery.als-1.7.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$("#lista1").als({
+				visible_items: 4,
+				scrolling_items: 1,
+				orientation: "horizontal",
+				circular: "yes",
+				autoscroll: "no",
+				interval: 5000,
+				speed: 500,
+				easing: "linear",
+				direction: "right",
+				start_from: 0
+			});
+		});
+			
+	</script>
+
 	
-	<script type="tex/javascript" src="./lib/js/myscriptSlide.js"></script>
 
 </body>
 </html>
