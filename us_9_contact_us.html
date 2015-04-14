@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./lib/css/social-sharing-buttons.css" rel="stylesheet">
+	<link href="./lib/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./lib/css/als.css" rel="stylesheet">
+	<link href="./lib/css/style.css" rel="stylesheet">
+	
+	
+		<!-- Google Maps https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(22.277064, 114.182031),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+ 	</script>
+	
+	
+	
+</head>
+<body>
+	<div class="container">
+          <nav class="navbar navbar-default featureBar-kidso">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-kido" href="#"><img src="lib/images/kidso-main (3).png" alt=""/></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">
+						<img src="lib/images/nav-feature (2).png">
+						<p>Feature Post</p>
+				  </a></li>
+                  <li><a href="#">
+						<img src="lib/images/nav-feature (3).png">
+						<p>Editor's Post</p>
+				  </a></li>
+                  <li><a href="#">
+						<img src="lib/images/nav-feature (1).png">
+						<p>Login</p>
+				  </a></li>          
+                </ul>
+				<ul class="nav search-kidso navbar-nav navbar-right">
+					<li class="search-input"><input type="text" class="search-input-control" placeholder="SEARCH.."></li>
+					<li class="button-search search-action"><a href="#"><img src="lib/images/search-icon.png"></a></li>
+					<li class="button-search lang-action"><a href="#">EN</a></li>
+				</ul> 
+                
+              </div><!-- /.navbar-collapse -->
+			  
+            </div><!-- /.container-fluid -->
+          </nav>
+	</div>
+	<div class="nav-kidso row">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">All <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">EDUCATION</a></li>
+				<li><a href="#">PLAYGROUPS</a></li>
+				<li><a href="#">SPECIALED</a></li>
+				<li><a href="#">ACTIVITIES</a></li> 
+				<li><a href="#">OUTDOOR</a></li> 
+				<li><a href="#">PARTIES</a></li> 
+				<li><a href="#">PRE/POSTINATAL</a></li> 
+				<li><a href="#">HEALTH</a></li> 
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<!--div class="col-xs-8 "-->
+			<div class="direction-about-us">
+				<!--div class="row"-->
+					<div class="col-md-6">
+						<div class="about-us-element">
+							<div class="left-side-aus-ele">
+								<img src="./lib/images/yellow-icon (5).png">
+							</div>
+							<div class="right-side-aus-ele">
+								<p>09:00 - 18:00 ( MON-FRI )</p>
+							</div>
+						</div>
+						<div class="about-us-element">
+							<div class="left-side-aus-ele">
+								<img src="./lib/images/yellow-icon (6).png">
+							</div>
+							<div class="right-side-aus-ele">
+								<p>+852 3622 2784</p>
+							</div>
+						</div>
+						<div class="about-us-element">
+							<div class="left-side-aus-ele">
+								<img src="./lib/images/yellow-icon (1).png">
+							</div>
+							<div class="right-side-aus-ele">
+								<p>kidso@gmail.com</p>
+							</div>
+						</div>
+						<div class="about-us-element">
+							<div class="left-side-aus-ele">
+								<img src="./lib/images/yellow-icon (7).png">
+							</div>
+							<div class="right-side-aus-ele">
+								<p>www.kidso.com.hk</p>
+							</div>
+						</div>
+						
+						<div class="about-us-element">
+
+ 						<div id="map-canvas">
+ 	
+ 						</div>
+					</div>
+						
+					<!--/div-->
+				</div>
+			<!--/div-->
+		</div>
+		<div class="col-md-4">
+			<div class ="contact-about-us">
+				<div class="intro-contact-aus">
+					<p class ="pag-contact-aus">
+					For Enquiry
+					We Want to Hear From You!
+					</p>
+					<p class ="pag-contact-aus">
+					lease complete the form below to drop us a message. 
+					</p>
+					<p class ="pag-contact-aus">
+					Alternatively you are welcomed to call our hotline at 3622 2784.
+					</p>
+				</div>
+				<div class="form-contact-aus">
+					<div class="form-group">
+						<label for="contact-name-aus">YOUR NAME</label>
+						<input type="text" class="form-control" id="contact-name-aus">
+					</div>
+					<div class="form-group">
+						<label for="contact-company-aus">COMPANY</label>
+						<input type="text" class="form-control" id="contact-company-aus">
+					</div>
+					<div class="form-group">
+						<label for="contact-phone-aus">PHONE NUMBER</label>
+						<input type="text" class="form-control" id="contact-phone-aus">
+					</div>
+					<div class="form-group">
+						<label for="contact-massage-aus">MASSAGE</label>
+						<input type="text" class="form-control" id="contact-massage-aus">
+					</div>
+					<label for "cate-enquiry-aus">Category of Enquiry</label>
+					<div id="cate-enquiry-aus" class="checkbox">
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > Advertising
+							</label>
+						</div>
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > Media
+							</label>
+						</div>
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > PR & Marketing
+							</label>
+						</div>
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > Technique
+							</label>
+						</div>
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > Website information Update
+							</label>
+						</div>
+						<div class='checkbox-element'>
+							<label>
+								<input type="checkbox" > Others
+							</label>
+						</div>
+						
+					</div>
+					<div class="btn btn-yellow submit-contact-aus">
+						<a href="#">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	</div>
+	<script type="text/javascript" src="./lib/js/jquery.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	
+
+	
+
+</body>
+</html>
