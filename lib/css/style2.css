@@ -1,0 +1,253 @@
+.hidden {
+  display: none;
+}
+.school-details-info {
+  margin: 10px 0px;
+  min-height: 175px;
+}
+.row-info {
+  width: 100%;
+  float: left;
+}
+.info-img {
+  width: 5%;
+  min-width: 30px;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.info-content {
+  width: 95%;
+  float: left;
+}
+.school-details-score,
+.school-details-description > div, 
+.comment-elements-large {
+  margin: 10px 0px;
+}
+.score-content {
+  height: 158px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px dashed #FFC842;
+  border-radius: 5px;
+}
+.score-content-left {
+  width: 50%;
+  height: 158px;
+  border-right: 1px dashed #FFC842;
+  float: left;
+}
+.score-row {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 0px 10px 0px 10px;
+}
+.score-row:first-child {
+  margin: 10px 10px 0px 10px;
+}
+.score-title {
+  float: left;
+  padding: 5px;
+  width: 40%;
+}
+.score-rate {
+  float: left;
+  padding: 5px;
+  width: 60%;
+}
+.score-content-right {
+  width: 50%;
+  height: 158px;
+  float: right;
+}
+.total-score {
+  background-color: #F01E23;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  color: #fff;
+  font-size: 14pt;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px;
+  margin: 30px 80px 10px 80px;
+}
+.btn-add-comment {
+  background-color: #FFC841;
+  border: 0px;
+  border-radius: 5px;
+  height: 40px;
+  color: #fff;
+  font-size: 14pt;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px;
+  margin: 0px 80px;
+}
+.btn-add-comment:hover {
+  background-color: #FFBC27;
+}
+.btn-add-comment > i {
+  margin-left: 10px;
+}
+.symbol {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: 0px 3px;
+}
+.symbol-empty {
+  border: 3px solid #E6E7E8;
+}
+.symbol-filled {
+  border: 3px solid #FFC841;
+}
+.add-comment-container {
+  width: 100%;
+  background-color: #fff;
+  border: 1px dashed #FFC842;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  position: relative;
+}
+.add-comment-title {
+  width: 100%;
+  height: 40px;
+  background: #FFC841 url("../images/backgroud_transparent.png");
+  background-size: 30%, auto, auto;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 8px;
+}
+.add-comment-title > img:first-child {
+  float: left;
+  margin-top: 5px;
+}
+.add-comment-title > p {
+  float: left;
+  margin-left: 150px;
+}
+.add-comment-title > img:last-child {
+  float: right;
+  margin-top: 5px;
+}
+#textarea_add_comment {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  max-height: 450px;
+}
+.score-in-comment-container {
+  width: 100%;
+  height: 160px;
+}
+.score-in-comment {
+  width: 50%;
+  margin: auto;
+}
+.btn-submit {
+  background-color: #FFC841;
+  border: 0px;
+  border-radius: 5px;
+  height: 36px;
+  color: #fff;
+  font-size: 12pt;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px;
+  margin: 0px 45%;
+}
+.comment-element-large {
+  margin: 7px 0;
+  padding: 10px;
+  background-color: #F0F0F0;
+  border-radius:5px;
+  moz-border-radius:5px;
+  webkit-border-radius:5px;
+}
+.content-comment-large {
+  margin-top: 80px;
+  padding:10px;
+  background-color:white;
+  border-radius:5px;
+  moz-border-radius:5px;
+  webkit-border-radius:5px;
+}
+.content-comment-large > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.profile-reviewer {
+  width: 100%;
+  float: left;
+}
+.pic-profile-reviewer {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: none repeat scroll 0% 0% #CCC;
+  border: 3px solid #FFC842;
+  overflow: hidden;
+  float: left;
+}
+.pic-profile-reviewer > img {
+  width: 70px;
+  height: 70px;
+}
+.info-reviewer {
+  width: 45%;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+  color: #FFC842;
+}
+.reviewer-name {
+  font-weight: bold;
+  font-size: 14pt;
+  margin-top: 10px;
+}
+.review-time {
+  font-size: 10pt;
+}
+.review-like {
+  height: 70px;
+  width: 40%;
+  min-width: 255px;
+  float: right;
+  background-color: #fff;
+  border: 1px dashed #FFC842;
+  border-radius: 5px;
+  color: #FFC842;
+  font-weight: bold;
+  padding: 20px 5px 20px 10px;
+}
+.review-like > .love {
+  float: left;
+  width: 30%;
+}
+.review-like > .love > img {
+  height: 30px;
+}
+.review-like > .like {
+  float: left;
+  width: 35%;
+}
+.review-like > .like > img {
+  height: 30px;
+}
+.review-like > .smile {
+  float: left;
+  width: 35%;
+}
+.review-like > .smile > img {
+  height: 30px;
+}
